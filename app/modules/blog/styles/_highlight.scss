@@ -1,0 +1,98 @@
+$very-light-gray: #F2F3F4;
+$light-gray: #D3D3D3;
+$gray: #A9A9A9;
+$dark-gray: #8B8589;
+
+$blue: #7C9ED9;
+$purple: #966FD6;
+$green: #77DD77;
+$red: #E4717A;
+$orange: #FFBD88;
+
+
+pre code {
+  display: block; padding: 1.5em;
+  background: $very-light-gray;
+  color: $dark-gray;
+}
+
+pre .keyword,
+pre .tag,
+pre .django .tag,
+pre .django .keyword,
+pre .css .class,
+pre .css .id,
+pre .lisp .title {
+  color: $red;
+}
+
+pre .django .template_tag,
+pre .django .variable,
+pre .django .filter .argument {
+  color: $very-light-gray;
+}
+
+pre .number,
+pre .date {
+  color: $orange;
+}
+
+pre .dos .keyword,
+pre .python .decorator,
+pre .class .title,
+pre .haskell .label,
+pre .function .title,
+pre .ini .title,
+pre .diff .header,
+pre .ruby .class .parent,
+pre .apache .tag,
+pre .nginx .built_in,
+pre .tex .command,
+pre .input_number {
+    color: $red;
+}
+
+pre .dos .winutils,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .ruby .symbol .keyword,
+pre .ruby .symbol .keymethods,
+pre .ruby .string,
+pre .ruby .instancevar {
+  color: $blue;
+}
+
+pre .diff .deletion,
+pre .string,
+pre .tag .value,
+pre .preprocessor,
+pre .built_in,
+pre .sql .aggregate,
+pre .javadoc,
+pre .smalltalk .class,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .css .rules .value,
+pre .attr_selector,
+pre .pseudo,
+pre .apache .cbracket,
+pre .tex .formula {
+  color: $blue;
+}
+
+pre .shebang,
+pre .diff .addition,
+pre .comment,
+pre .java .annotation,
+pre .template_comment,
+pre .pi,
+pre .doctype {
+  color: $gray;
+}
+
+pre .xml .css,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .tex .formula {
+  opacity: 0.5;
+}

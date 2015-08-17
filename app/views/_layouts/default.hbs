@@ -1,0 +1,30 @@
+<!doctype html>
+<!--[if IE 9]><html class="no-js lt-ie11 lt-ie10" lang="{{locale}}"> <![endif]-->
+<!--[if IE 10]><html class="no-js lt-ie11" lang="{{locale}}"> <![endif]-->
+<!--[if gt IE 10]><!--><html class="no-js" lang="{{locale}}"> <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta content="{{locale}}" http-equiv="Content-Language">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-itouch-icon" href="/images/favicon.png">
+
+    {{#block "metas"}}{{/block}}
+
+    <title>{{title}}</title>
+
+    {{#block "styles"}}{{/block}}
+
+    {{!-- If Browser can run JS, the .no-js class will be removed. Allow us to condition styling on JS availability --}}
+    <script>(function(d){d.className=d.className.replace(/no-js/,'');})(document.documentElement);</script>
+  </head>
+  <body class="body">
+    <main class="main" id="main">
+      {{{body}}}
+    </main>
+
+    <script src="/scripts/common.js"></script>
+    {{#block "scripts"}}{{/block}}
+  </body>
+</html>

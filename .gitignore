@@ -1,0 +1,10 @@
+.idea/
+.sass-cache/
+.DS_Store
+.swp
+
+
+node_modules/
+.public
+
+npm-debug.log

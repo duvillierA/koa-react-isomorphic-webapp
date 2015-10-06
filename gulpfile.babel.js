@@ -117,7 +117,7 @@ gulp.task('watch', () => {
 gulp.task('server', function () {
   $.nodemon({
     script: 'app.js',
-    ext: 'js json',
+    ext: 'js json hbs',
     ignore: ['test/*', '.public/*', 'node_modules/*', 'app/modules/*']
   });
 });

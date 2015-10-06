@@ -13,8 +13,10 @@ class Blog extends React.Component {
     // if posts are fullfilled by the server
     let hasAlreadyPosts = (this.props.posts && this.props.posts.length);
     if (hasAlreadyPosts) return;
-    // otherwise fetch them
-    getJSON('/blog/posts', null)
+    this.loadContentFromServer();
+  }
+  loadContentFromServer() {
+    getJSON(this.props.url, null)
     .then(result => {
       this.setState({posts: result.posts});
     }.bind(this));

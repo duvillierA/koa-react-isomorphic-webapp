@@ -12,19 +12,16 @@ var dir = __dirname;
 
 var app = koa();
 
-app.use(logger());
-app.use(responseTime());
-
-app.use(hbs.middleware({
+app.use(logger())
+.use(responseTime())
+.use(hbs.middleware({
   viewPath: config.views.viewPath,
   partialsPath: config.views.partialsPath,
   layoutsPath: config.views.layoutsPath,
   defaultLayout: config.views.defaultLayout
-}));
-
-app.use(serveStatic(resolve(dir, '.public')));
-
-app.use(routing({
+}))
+.use(serveStatic(resolve(dir, '.public')))
+.use(routing({
   routesPath: 'app/**/routes.js',
   controllersPath: resolve(dir, 'app/controllers')
 }));

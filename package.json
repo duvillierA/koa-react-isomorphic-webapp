@@ -36,6 +36,7 @@
     "koa-route": "^2.4.2",
     "koa-static": "^1.4.9",
     "marked": "^0.3.5",
+    "moment": "^2.10.6",
     "react-router": "git+ssh://git@github.com:rackt/react-router.git#v1.0.0-beta3",
     "run-sequence": "^1.1.1",
     "underscore": "^1.8.3",

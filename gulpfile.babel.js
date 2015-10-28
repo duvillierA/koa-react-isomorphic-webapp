@@ -47,7 +47,7 @@ gulp.task('lint', () => {
   return gulp.src([SRC.lib, SRC.app])
     .pipe($.eslint())
     .pipe($.eslint.format())
-    .pipe($.eslint.failOnError())
+    .pipe($.eslint.failAfterError())
     .pipe($.notify({onLast: true, message: 'Lint completed'}));
 });
 

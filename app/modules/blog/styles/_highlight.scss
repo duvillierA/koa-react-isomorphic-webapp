@@ -18,17 +18,17 @@ pre code {
 
 pre .keyword,
 pre .tag,
-pre .django .tag,
-pre .django .keyword,
-pre .css .class,
-pre .css .id,
+pre .lang-django .tag,
+pre .lang-django .keyword,
+pre .lang-css .class,
+pre .lang-css .id,
 pre .lisp .title {
   color: $red;
 }
 
-pre .django .template_tag,
-pre .django .variable,
-pre .django .filter .argument {
+pre .lang-django .template_tag,
+pre .lang-django .variable,
+pre .lang-django .filter .argument {
   color: $very-light-gray;
 }
 
@@ -38,13 +38,13 @@ pre .date {
 }
 
 pre .dos .keyword,
-pre .python .decorator,
+pre .lang-python .decorator,
 pre .class .title,
 pre .haskell .label,
 pre .function .title,
 pre .ini .title,
 pre .diff .header,
-pre .ruby .class .parent,
+pre .lang-ruby .class .parent,
 pre .apache .tag,
 pre .nginx .built_in,
 pre .tex .command,
@@ -53,12 +53,12 @@ pre .input_number {
 }
 
 pre .dos .winutils,
-pre .ruby .symbol,
-pre .ruby .symbol .string,
-pre .ruby .symbol .keyword,
-pre .ruby .symbol .keymethods,
-pre .ruby .string,
-pre .ruby .instancevar {
+pre .lang-ruby .symbol,
+pre .lang-ruby .symbol .string,
+pre .lang-ruby .symbol .keyword,
+pre .lang-ruby .symbol .keymethods,
+pre .lang-ruby .string,
+pre .lang-ruby .instancevar {
   color: $blue;
 }
 
@@ -72,7 +72,7 @@ pre .javadoc,
 pre .smalltalk .class,
 pre .smalltalk .localvars,
 pre .smalltalk .array,
-pre .css .rules .value,
+pre .lang-css .rules .value,
 pre .attr_selector,
 pre .pseudo,
 pre .apache .cbracket,
@@ -90,9 +90,44 @@ pre .doctype {
   color: $gray;
 }
 
-pre .xml .css,
-pre .xml .javascript,
-pre .xml .vbscript,
+pre .xml .lang-css,
+pre .xml .lang-javascript,
+pre .xml .lang-vbscript,
 pre .tex .formula {
   opacity: 0.5;
+}
+
+
+pre .title,
+pre .id,
+pre .params,
+pre .lang-css .class,
+pre .lang-scss .class,
+pre .lang-scss .preprocessor {
+  color: $orange;
+}
+
+pre .lang-javascript .title,
+pre .lisp .title,
+pre .lang-clojure .title,
+pre .subst {
+  font-weight: normal;
+}
+
+pre .attribute {
+  color: $dark-gray;
+}
+pre .variable {
+  color: $purple;
+}
+
+
+pre {
+  background:#f5f2f0;
+  padding:15px;
+  margin:0 0 20px 0;
+  overflow: auto;
+}
+code[class*="language-"], pre[class*="language-"] {
+  white-space: pre-wrap;
 }

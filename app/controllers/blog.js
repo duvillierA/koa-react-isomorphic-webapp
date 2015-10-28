@@ -2,7 +2,7 @@
 
 import React from 'react';
 import marked from 'marked';
-import {Highlight as highlight} from 'highlight';
+import hjs from 'highlight.js';
 import BlogApp from '../modules/blog/components/blog';
 import PostApp from '../modules/blog/components/post';
 
@@ -15,7 +15,12 @@ PostsFixtures.forEach(function(p){
     breaks: true,
     tables: false,
     xhtml: true,
-    highlight: code => { return highlight(code); }
+    highlight: (code, lang) => {
+      hjs.configure({
+        classPrefix: ''
+      });
+      return hjs.highlight(lang, code).value;
+    }
   });
 });
 

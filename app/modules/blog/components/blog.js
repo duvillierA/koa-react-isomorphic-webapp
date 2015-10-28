@@ -9,6 +9,8 @@ class Blog extends React.Component {
       posts: props.posts
     };
   }
+  static propTypes = { posts: React.PropTypes.array }
+  static defaultProps = { posts: []}
   componentWillMount() {
     // if posts are fullfilled by the server
     let hasAlreadyPosts = (this.props.posts && this.props.posts.length);
@@ -31,8 +33,5 @@ class Blog extends React.Component {
     );
   }
 }
-
-Blog.propTypes = { posts: React.PropTypes.array};
-Blog.defaultProps = { posts: []};
 
 export default Blog;

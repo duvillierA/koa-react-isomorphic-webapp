@@ -20,9 +20,9 @@ let modules = {
   module: {
    noParse: [],
    loaders: [{
-     test: /\.jsx?$/,
-     exclude: [nodeModulesPath],
-     loader: 'babel-loader'
+    test: /\.jsx?$/,
+    exclude: [nodeModulesPath],
+    loader: 'babel-loader'
    }]
   },
   plugins: [commonPlugin]

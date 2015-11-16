@@ -2,4 +2,4 @@ var routes = {
   'get /todos': 'todos#index'
 };
 
-export default routes;
+module.exports = routes;

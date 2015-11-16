@@ -7,4 +7,4 @@ class PostDate extends React.Component {
   }
 }
 
-export default PostDate;
+module.exports = PostDate;

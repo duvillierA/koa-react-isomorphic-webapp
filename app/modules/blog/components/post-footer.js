@@ -19,4 +19,4 @@ class PostFooter extends React.Component {
   }
 }
 
-export default PostFooter;
+module.exports = PostFooter;

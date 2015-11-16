@@ -4,4 +4,4 @@ var routes = {
   'get /blog/posts/:slug': 'blog#post'
 };
 
-export default routes;
+module.exports = routes;

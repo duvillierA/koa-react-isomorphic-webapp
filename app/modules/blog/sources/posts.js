@@ -1,4 +1,4 @@
-export default [{
+module.exports = [{
   id: 'title1',
   slug: 'slug-title1',
   uri: '/blog/slug-title1',

@@ -21,7 +21,7 @@ class Blog extends React.Component {
     getJSON(this.props.url, null)
     .then(result => {
       this.setState({posts: result.posts});
-    }.bind(this));
+    });
   }
   render() {
     return (
@@ -34,4 +34,4 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog;
+module.exports = Blog;

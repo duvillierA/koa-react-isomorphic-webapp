@@ -23,4 +23,4 @@ class PostHeader extends React.Component {
   }
 }
 
-export default PostHeader;
+module.exports = PostHeader;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Blog from './components/blog';
 
-React.render(<Blog url='/blog/posts'/>, document.getElementById('main'));
+ReactDOM.render(<Blog url='/blog/posts'/>, document.getElementById('main'));

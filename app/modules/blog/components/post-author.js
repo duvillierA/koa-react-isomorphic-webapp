@@ -6,4 +6,4 @@ class PostAuthor extends React.Component {
   }
 }
 
-export default PostAuthor;
+module.exports = PostAuthor;

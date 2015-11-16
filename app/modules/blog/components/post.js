@@ -38,4 +38,4 @@ class Post extends React.Component {
   }
 }
 
-export default Post;
+module.exports = Post;

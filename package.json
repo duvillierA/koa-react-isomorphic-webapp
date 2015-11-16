@@ -39,7 +39,7 @@
     "koa-static": "^1.4.9",
     "marked": "^0.3.5",
     "moment": "^2.10.6",
-    "react-router": "git+ssh://git@github.com:rackt/react-router.git#v1.0.0-beta3",
+    "react-router": "^1.0.0",
     "run-sequence": "^1.1.1",
     "underscore": "^1.8.3",
     "vinyl-named": "^1.1.0",
@@ -55,7 +55,8 @@
     "gulp-notify": "^2.2.0",
     "jquery": "^2.1.4",
     "mocha": "^2.2.4",
-    "react": "^0.13.3"
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   },
   "scripts": {
     "start": "node --harmony app.js",

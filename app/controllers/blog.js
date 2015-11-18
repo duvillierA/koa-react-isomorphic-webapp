@@ -5,6 +5,7 @@ import marked from 'marked';
 import hjs from 'highlight.js';
 import BlogApp from '../modules/blog/components/blog';
 import PostApp from '../modules/blog/components/post';
+import ReactDOMServer from 'react-dom/server';
 
 import PostsFixtures from '../modules/blog/sources/posts.js';
 
@@ -33,7 +34,7 @@ PostsFixtures.forEach(function(p){
 
 export function* index () {
   let somePosts = PostsFixtures;
-  let blogApp = React.renderToString(React.createElement(BlogApp, {posts: somePosts}));
+  let blogApp = ReactDOMServer.renderToString(React.createElement(BlogApp, {posts: somePosts}));
   yield this.render('blog', {blogApp});
  }
 
@@ -45,7 +46,7 @@ export function* index () {
   */
 
 export function* post (slug) {
-  // let postApp = React.renderToString(React.createElement(PostApp, {post: aPost}));
+  // let postApp = ReactDOMServer.renderToString(React.createElement(PostApp, {post: aPost}));
   // yield this.render('blog/post', {post: postApp});
 }
 
